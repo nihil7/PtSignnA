@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c13c9f-1235-44b6-8805-1511c671d9d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gtignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gtignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PtAutoSign.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PtAutoSign.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Envpull.py" beforeDir="false" afterPath="$PROJECT_DIR$/Envpull.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RunDaily.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/RunDaily.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744434305739</updated>
       <workItem from="1744443145245" duration="1549000" />
-      <workItem from="1744445959209" duration="7836000" />
+      <workItem from="1744445959209" duration="10000000" />
     </task>
     <servers />
   </component>
