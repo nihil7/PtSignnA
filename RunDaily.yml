@@ -1,0 +1,47 @@
+name: Auto Check_in
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # 每天 9 点自动执行，按需要调整
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  auto_signin:
+    runs-on: ubuntu-latest
+
+    env:
+      COOKIE_1_logged_in: ${{ secrets.COOKIE_1_logged_in }}
+      COOKIE_1_cf_clearance: ${{ secrets.COOKIE_1_cf_clearance }}
+      COOKIE_1_c_secure_uid: ${{ secrets.COOKIE_1_c_secure_uid }}
+      COOKIE_1_c_secure_tracker_ssl: ${{ secrets.COOKIE_1_c_secure_tracker_ssl }}
+      COOKIE_1_c_secure_ssl: ${{ secrets.COOKIE_1_c_secure_ssl }}
+      COOKIE_1_c_secure_pass: ${{ secrets.COOKIE_1_c_secure_pass }}
+      COOKIE_1_c_secure_login: ${{ secrets.COOKIE_1_c_secure_login }}
+      COOKIE_1_c_lang_folder: ${{ secrets.COOKIE_1_c_lang_folder }}
+
+      COOKIE_2_logged_in: ${{ secrets.COOKIE_2_logged_in }}
+      COOKIE_2_cf_clearance: ${{ secrets.COOKIE_2_cf_clearance }}
+      COOKIE_2_c_secure_uid: ${{ secrets.COOKIE_2_c_secure_uid }}
+      COOKIE_2_c_secure_tracker_ssl: ${{ secrets.COOKIE_2_c_secure_tracker_ssl }}
+      COOKIE_2_c_secure_ssl: ${{ secrets.COOKIE_2_c_secure_ssl }}
+      COOKIE_2_c_secure_pass: ${{ secrets.COOKIE_2_c_secure_pass }}
+      COOKIE_2_c_secure_login: ${{ secrets.COOKIE_2_c_secure_login }}
+      COOKIE_2_c_lang_folder: ${{ secrets.COOKIE_2_c_lang_folder }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.12'
+
+    - name: Install required libraries
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests python-dotenv  # 安装 python-dotenv
+
+    - name: Run Check_in script
+      run: |
+        python Check_in.py  # 运行你的 Python 脚本
