@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c13c9f-1235-44b6-8805-1511c671d9d2" name="Changes" comment="" />
+    <list default="true" id="73c13c9f-1235-44b6-8805-1511c671d9d2" name="Changes" comment="更新了子程序问题" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +42,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/nihil7/PtSignn.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/nihil7/PtSignnA.git&quot;,
     &quot;accountId&quot;: &quot;37f316d5-0357-4c3e-8d76-c90b758dedb1&quot;
   }
 }</component>
@@ -72,18 +72,19 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ishel/Desktop/编程总库/PtSignn&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ishel/Desktop/编程总库/PtSignnA&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.language.and.region&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ishel\Desktop\编程总库\PtSignnA" />
       <recent name="C:\Users\ishel\Desktop\编程总库\PtSign" />
       <recent name="C:\Users\ishel\AppData\Roaming\JetBrains\PyCharm2024.3\extensions\com.intellij.database\data" />
       <recent name="C:\Users\ishel\Desktop\编程总库\PtAutoSign\.github\workflows" />
@@ -239,22 +240,46 @@
       <workItem from="1744460579893" duration="551000" />
       <workItem from="1744461216607" duration="668000" />
       <workItem from="1744461954285" duration="1035000" />
+      <workItem from="1744463030994" duration="613000" />
     </task>
+    <task id="LOCAL-00001" summary="更新了子程序问题">
+      <option name="closed" value="true" />
+      <created>1744463310347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744463310347</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="更新了子程序问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了子程序问题" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PtAutoSign$python_signin.coverage" NAME="python signin Coverage Results" MODIFIED="1744454823834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PtAutoSign$ceshi.coverage" NAME="ceshi Coverage Results" MODIFIED="1744452916740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PtAutoSign$envpull.coverage" NAME="envpull Coverage Results" MODIFIED="1744454729161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PtSignA$Envpull__1_.coverage" NAME="Envpull (1) Coverage Results" MODIFIED="1744461259288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PtSignnA$Envpull__1_.coverage" NAME="Envpull (1) Coverage Results" MODIFIED="1744463158040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PtSign$Envpull__1_.coverage" NAME="Envpull (1) Coverage Results" MODIFIED="1744460942790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PtAutoSign$Test__1_.coverage" NAME="Test (1) Coverage Results" MODIFIED="1744455332776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
