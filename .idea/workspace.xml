@@ -7,6 +7,7 @@
     <list default="true" id="73c13c9f-1235-44b6-8805-1511c671d9d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Envpull.py" beforeDir="false" afterPath="$PROJECT_DIR$/Envpull.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ishel\AppData\Roaming\JetBrains\PyCharm2024.3\extensions\com.intellij.database\data" />
       <recent name="C:\Users\ishel\Desktop\编程总库\PtAutoSign\.github\workflows" />
     </key>
   </component>
@@ -192,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744434305739</updated>
       <workItem from="1744443145245" duration="1549000" />
-      <workItem from="1744445959209" duration="10000000" />
+      <workItem from="1744445959209" duration="10867000" />
     </task>
     <servers />
   </component>
