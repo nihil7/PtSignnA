@@ -3,10 +3,10 @@ from dotenv import dotenv_values
 from github import Github
 
 # ==== 配置 ====
-REPO_NAME = "nihil7/PtAutoSign"  # 替换为你的 GitHub 仓库路径
+REPO_NAME = "nihil7/PtSign"  # 替换为你的 GitHub 仓库路径
 
 # ==== 加载 .env 文件变量 ====
-env_vars = dotenv_values("../../../AppData/Roaming/JetBrains/PyCharm2024.3/extensions/com.intellij.database/data/.env")
+env_vars = dotenv_values(".env")
 
 # ==== 从系统环境变量中读取 GitHub Token ====
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN") or env_vars.get("GITHUB_TOKEN")
