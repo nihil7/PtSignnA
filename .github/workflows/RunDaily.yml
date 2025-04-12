@@ -2,7 +2,7 @@ name: Auto Check_in
 
 on:
   schedule:
-    - cron: '10 13 * * *'  # 每天 20:35 北京时间（对应 UTC 时间 12:35）
+    - cron: '30 13 * * *'  # 每天 20:35 北京时间（对应 UTC 时间 12:35）
   workflow_dispatch:  # 手动触发
 
 jobs:
