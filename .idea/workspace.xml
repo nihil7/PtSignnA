@@ -95,7 +95,7 @@
       <recent name="C:\Users\ishel\Desktop\编程总库\PtAutoSign\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Check_in (1)">
+  <component name="RunManager" selected="Python.Envpull (1)">
     <configuration name="Check_in (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PtAutoSign" />
       <option name="ENV_FILES" value="" />
@@ -215,8 +215,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Check_in (1)" />
         <item itemvalue="Python.Envpull (1)" />
+        <item itemvalue="Python.Check_in (1)" />
         <item itemvalue="Python.Test (1)" />
         <item itemvalue="Python.Check_in" />
         <item itemvalue="Python.Envpull" />
