@@ -1,5 +1,7 @@
+import os
 import logging
 import cloudscraper
+from dotenv import load_dotenv
 
 # 设置日志文件
 logging.basicConfig(filename='checkin.log', level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -7,6 +9,24 @@ logging.basicConfig(filename='checkin.log', level=logging.INFO, format='%(asctim
 def log(msg):
     print(msg)
     logging.info(msg)
+
+def load_env():
+    log("🔄 正在加载 .env 文件...")
+    load_dotenv()
+    if not os.getenv('COOKIE_1_logged_in'):
+        log("⚠️ 警告：未成功加载 .env 文件或部分变量缺失，请检查")
+
+def build_cookie(index):
+    return {
+        'logged_in': os.getenv(f'COOKIE_{index}_logged_in'),
+        'cf_clearance': os.getenv(f'COOKIE_{index}_cf_clearance'),
+        'c_secure_uid': os.getenv(f'COOKIE_{index}_c_secure_uid'),
+        'c_secure_tracker_ssl': os.getenv(f'COOKIE_{index}_c_secure_tracker_ssl'),
+        'c_secure_ssl': os.getenv(f'COOKIE_{index}_c_secure_ssl'),
+        'c_secure_pass': os.getenv(f'COOKIE_{index}_c_secure_pass'),
+        'c_secure_login': os.getenv(f'COOKIE_{index}_c_secure_login'),
+        'c_lang_folder': os.getenv(f'COOKIE_{index}_c_lang_folder')
+    }
 
 def print_cookie_info(name, cookie_dict):
     log(f"🍪 {name} cookies:")
@@ -42,28 +62,11 @@ def check_in(url, cookies, account_name):
         log(f"🚨 {account_name} 请求异常: {str(e)}")
 
 def main():
-    # 手动写入两个账号 Cookie 信息
-    cookies_1 = {
-        'logged_in': 'true',
-        'cf_clearance': 'evwwjBi0zHtg4phQ20mY5AtHRJeGwksYU8XN80L.inY-1744452269-1.2.1.1-YSnP6oAnIFfeHNrzDdAn6DySIc5YTT767dPXccN3p5l1SYzyensRnmkOCLPHr58KEhjtMmGSrXtlL6lGi3GorDSvAj_30eSvgAgmfoRweEIfJpDzAz.qyz33c_Ex39S2aycDZgVr8TZZU0WLHDRKXdkQHF_klDwAFE3M2Bcj1BQW2Uwt06Hr3ORcD9402XGT6DiMk86lB0Hptn9fzOgGk1_Aa7flO2E4cCSzvMr6Y0Ixhe65IMJttwKvE6B6_76xDpn9b7SMDScxgj7umrXEhGtH7FPXWMIziqZd4q_LzurhV4YZz8fyGWUiIAeRT9lhMKHSmPY22g_5Tqg5wFb_2EMZSDYiZkdvodTPpSgOT3c',
-        'c_secure_uid': 'Mjc4NQ%3D%3D',
-        'c_secure_tracker_ssl': 'eWVhaA%3D%3D',
-        'c_secure_ssl': 'eWVhaA%3D%3D',
-        'c_secure_pass': '3b2e7d0a2eefd5e6cd30b2abd289a329',
-        'c_secure_login': 'bm9wZQ%3D%3D',
-        'c_lang_folder': 'chs'
-    }
+    load_env()
 
-    cookies_2 = {
-        'logged_in': 'true',
-        'cf_clearance': 'AoyfbPNEGoMjNSbUnOwsDz5_VA1Xhht8q8tlW4PPCJA-1744453098-1.2.1.1-LMIpRVTdR0QycD0Vm9bX8OhHVG.Oytx7hyoejdF0b5ujnUdxDn2BU9kYB_aHqhBSWkj0YN1Gr9h7wsWujLkIPB9gRmwjR4Q4OmlJPqvMCq4uKrFUcCHwV_NY.PzUN24.t0Y1vmEpU_3HaVxSfJapIatUey4Feok_IrG0ZmQO3ePrbL5DurvbwVedCPlzx7xhJfLrtqYUnQ76bH8CLDnHlY_mxD1p7j8_Zh2lnNa36epUiF76.Gfs2Fh12HfM0BJIlxOrJ..8v56TYAde1uS1dRDCedFmx7ESDVYEbjqGD1sMiNzlPs8t7ZX5ojbighUWKLpjaZVXEBR5e3_K9bORJmXH01oBmtCYOUZbwSMQVnQ',
-        'c_secure_uid': 'MjA4MDE%3D',
-        'c_secure_tracker_ssl': 'eWVhaA%3D%3D',
-        'c_secure_ssl': 'eWVhaA%3D%3D',
-        'c_secure_pass': '81d8e46b8765e7a42b7e75aa3be24af4',
-        'c_secure_login': 'bm9wZQ%3D%3D',
-        'c_lang_folder': 'chs'
-    }
+    # 构建两个账号的 cookie
+    cookies_1 = build_cookie(1)
+    cookies_2 = build_cookie(2)
 
     print_cookie_info("账号 1", cookies_1)
     print_cookie_info("账号 2", cookies_2)
