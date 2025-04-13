@@ -69,12 +69,12 @@ def main():
     print_cookie_info("账号 2", cookies_2)
 
     if is_cookie_valid(cookies_1):
-        check_in('hhttps://www.pttime.org/index.php', cookies_1, "账号 1")
+        check_in('https://www.pttime.org/attendance.php?type=sign&uid=2785', cookies_1, "账号 1")
     else:
         log("⚠️ 账号 1 的 Cookie 信息不完整，跳过签到")
 
     if is_cookie_valid(cookies_2):
-        check_in('https://www.pttime.org/index.php', cookies_2, "账号 2")
+        check_in('https://www.pttime.org/attendance.php?type=sign&uid=20801', cookies_2, "账号 2")
     else:
         log("⚠️ 账号 2 的 Cookie 信息不完整，跳过签到")
 
