@@ -5,8 +5,9 @@ from dotenv import load_dotenv
 import cloudscraper
 from datetime import datetime
 
-# 加载 .env 文件，用于获取环境变量中的 Cookie 信息
-load_dotenv()
+# 仅在本地加载 .env 文件，GitHub Actions 中跳过
+if not os.getenv("GITHUB_ACTIONS", "").lower() == "true":
+    load_dotenv()
 
 # 通用请求头信息
 headers = {

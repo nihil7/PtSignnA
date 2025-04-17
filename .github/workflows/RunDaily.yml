@@ -1,14 +1,18 @@
 name: Auto Check_in
 
 on:
+  # 定时触发：每天 UTC 时间 22:00（即北京时间次日早上 6:00）
   schedule:
-    - cron: '0 22 * * *'  # 每天 UTC 时间 22:00，相当于北京时间次日早上 6:00
-  workflow_dispatch:  # 手动触发
+    - cron: '0 22 * * *'
+  # 支持手动触发工作流
+  workflow_dispatch:
 
 jobs:
   auto_signin:
+    # 使用最新版的 Ubuntu 运行环境
     runs-on: ubuntu-latest
 
+    # 设置环境变量（从 GitHub 仓库的 Secrets 中读取 Cookie 信息）
     env:
       COOKIE_1_logged_in: ${{ secrets.COOKIE_1_logged_in }}
       COOKIE_1_cf_clearance: ${{ secrets.COOKIE_1_cf_clearance }}
@@ -29,19 +33,22 @@ jobs:
       COOKIE_2_c_lang_folder: ${{ secrets.COOKIE_2_c_lang_folder }}
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      # 第一步：拉取当前仓库代码
+      - name: 检出代码仓库
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.12'
+      # 第二步：设置 Python 环境（使用 Python 3.12）
+      - name: 安装 Python 环境
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.12'
 
-    - name: Install required libraries
-      run: |
-        python -m pip install --upgrade pip
-        pip install cloudscraper python-dotenv
+      # 第三步：安装所需 Python 库（仅安装 cloudscraper，dotenv 在 GitHub 不使用）
+      - name: 安装依赖库
+        run: |
+          pip install --upgrade pip
+          pip install cloudscraper
 
-    - name: Run Check_in script
-      run: |
-        python Check_in.py
+      # 第四步：运行签到脚本
+      - name: 执行签到脚本
+        run: python Check_in.py
