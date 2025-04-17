@@ -1,7 +1,7 @@
 import os
 import time
 import random
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import cloudscraper
 from datetime import datetime
 
