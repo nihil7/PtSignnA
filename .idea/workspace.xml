@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c13c9f-1235-44b6-8805-1511c671d9d2" name="Changes" comment="解决冲突">
-      <change afterPath="$PROJECT_DIR$/pttimeonly.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/RunDaily.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/RunDaily.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Check_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/Check_in.py" afterDir="false" />
     </list>
@@ -69,6 +67,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Check_in (1).executor": "Run",
+    "Python.Check_in.executor": "Run",
     "Python.Envpull (1).executor": "Run",
     "Python.Test (1).executor": "Run",
     "Python.all.executor": "Run",
@@ -97,7 +96,29 @@
       <recent name="C:\Users\ishel\Desktop\编程总库\PtAutoSign\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Envpull (1)">
+  <component name="RunManager" selected="Python.Check_in">
+    <configuration name="Check_in" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PtAutoSign" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Check_in.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Envpull (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PtAutoSign" />
       <option name="ENV_FILES" value="" />
@@ -113,29 +134,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Envpull.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PtAutoSign" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Check_in" />
         <item itemvalue="Python.Envpull (1)" />
         <item itemvalue="Python.all" />
         <item itemvalue="Python.pttimeonly" />
         <item itemvalue="Python.print environ" />
-        <item itemvalue="Python.Test (1)" />
       </list>
     </recent_temporary>
   </component>
