@@ -14,23 +14,55 @@ jobs:
 
     # 设置环境变量（从 GitHub 仓库的 Secrets 中读取 Cookie 信息）
     env:
-      COOKIE_1_logged_in: ${{ secrets.COOKIE_1_logged_in }}
-      COOKIE_1_cf_clearance: ${{ secrets.COOKIE_1_cf_clearance }}
-      COOKIE_1_c_secure_uid: ${{ secrets.COOKIE_1_c_secure_uid }}
-      COOKIE_1_c_secure_tracker_ssl: ${{ secrets.COOKIE_1_c_secure_tracker_ssl }}
-      COOKIE_1_c_secure_ssl: ${{ secrets.COOKIE_1_c_secure_ssl }}
-      COOKIE_1_c_secure_pass: ${{ secrets.COOKIE_1_c_secure_pass }}
-      COOKIE_1_c_secure_login: ${{ secrets.COOKIE_1_c_secure_login }}
-      COOKIE_1_c_lang_folder: ${{ secrets.COOKIE_1_c_lang_folder }}
+        # PTTIME A/B
+        PTTIME_A_LOGGED_IN: ${{ secrets.PTTIME_A_LOGGED_IN }}
+        PTTIME_A_CF_CLEARANCE: ${{ secrets.PTTIME_A_CF_CLEARANCE }}
+        PTTIME_A_C_SECURE_UID: ${{ secrets.PTTIME_A_C_SECURE_UID }}
+        PTTIME_A_C_SECURE_TRACKER_SSL: ${{ secrets.PTTIME_A_C_SECURE_TRACKER_SSL }}
+        PTTIME_A_C_SECURE_SSL: ${{ secrets.PTTIME_A_C_SECURE_SSL }}
+        PTTIME_A_C_SECURE_PASS: ${{ secrets.PTTIME_A_C_SECURE_PASS }}
+        PTTIME_A_C_SECURE_LOGIN: ${{ secrets.PTTIME_A_C_SECURE_LOGIN }}
+        PTTIME_A_C_LANG_FOLDER: ${{ secrets.PTTIME_A_C_LANG_FOLDER }}
 
-      COOKIE_2_logged_in: ${{ secrets.COOKIE_2_logged_in }}
-      COOKIE_2_cf_clearance: ${{ secrets.COOKIE_2_cf_clearance }}
-      COOKIE_2_c_secure_uid: ${{ secrets.COOKIE_2_c_secure_uid }}
-      COOKIE_2_c_secure_tracker_ssl: ${{ secrets.COOKIE_2_c_secure_tracker_ssl }}
-      COOKIE_2_c_secure_ssl: ${{ secrets.COOKIE_2_c_secure_ssl }}
-      COOKIE_2_c_secure_pass: ${{ secrets.COOKIE_2_c_secure_pass }}
-      COOKIE_2_c_secure_login: ${{ secrets.COOKIE_2_c_secure_login }}
-      COOKIE_2_c_lang_folder: ${{ secrets.COOKIE_2_c_lang_folder }}
+        PTTIME_B_LOGGED_IN: ${{ secrets.PTTIME_B_LOGGED_IN }}
+        PTTIME_B_CF_CLEARANCE: ${{ secrets.PTTIME_B_CF_CLEARANCE }}
+        PTTIME_B_C_SECURE_UID: ${{ secrets.PTTIME_B_C_SECURE_UID }}
+        PTTIME_B_C_SECURE_TRACKER_SSL: ${{ secrets.PTTIME_B_C_SECURE_TRACKER_SSL }}
+        PTTIME_B_C_SECURE_SSL: ${{ secrets.PTTIME_B_C_SECURE_SSL }}
+        PTTIME_B_C_SECURE_PASS: ${{ secrets.PTTIME_B_C_SECURE_PASS }}
+        PTTIME_B_C_SECURE_LOGIN: ${{ secrets.PTTIME_B_C_SECURE_LOGIN }}
+        PTTIME_B_C_LANG_FOLDER: ${{ secrets.PTTIME_B_C_LANG_FOLDER }}
+
+        # 1PTBA
+        PTBA_X1_LOGGED_IN: ${{ secrets.PTBA_X1_LOGGED_IN }}
+        PTBA_X1_CF_CLEARANCE: ${{ secrets.PTBA_X1_CF_CLEARANCE }}
+        PTBA_X1_C_SECURE_UID: ${{ secrets.PTBA_X1_C_SECURE_UID }}
+        PTBA_X1_C_SECURE_TRACKER_SSL: ${{ secrets.PTBA_X1_C_SECURE_TRACKER_SSL }}
+        PTBA_X1_C_SECURE_SSL: ${{ secrets.PTBA_X1_C_SECURE_SSL }}
+        PTBA_X1_C_SECURE_PASS: ${{ secrets.PTBA_X1_C_SECURE_PASS }}
+        PTBA_X1_C_SECURE_LOGIN: ${{ secrets.PTBA_X1_C_SECURE_LOGIN }}
+        PTBA_X1_C_LANG_FOLDER: ${{ secrets.PTBA_X1_C_LANG_FOLDER }}
+
+        # PTTZONE
+        PTZONE_X1_LOGGED_IN: ${{ secrets.PTZONE_X1_LOGGED_IN }}
+        PTZONE_X1_CF_CLEARANCE: ${{ secrets.PTZONE_X1_CF_CLEARANCE }}
+        PTZONE_X1_C_SECURE_UID: ${{ secrets.PTZONE_X1_C_SECURE_UID }}
+        PTZONE_X1_C_SECURE_TRACKER_SSL: ${{ secrets.PTZONE_X1_C_SECURE_TRACKER_SSL }}
+        PTZONE_X1_C_SECURE_SSL: ${{ secrets.PTZONE_X1_C_SECURE_SSL }}
+        PTZONE_X1_C_SECURE_PASS: ${{ secrets.PTZONE_X1_C_SECURE_PASS }}
+        PTZONE_X1_C_SECURE_LOGIN: ${{ secrets.PTZONE_X1_C_SECURE_LOGIN }}
+        PTZONE_X1_C_LANG_FOLDER: ${{ secrets.PTZONE_X1_C_LANG_FOLDER }}
+
+        # BTSCHOOL
+        BTSCHOOL_X1_LOGGED_IN: ${{ secrets.BTSCHOOL_X1_LOGGED_IN }}
+        BTSCHOOL_X1_CF_CLEARANCE: ${{ secrets.BTSCHOOL_X1_CF_CLEARANCE }}
+        BTSCHOOL_X1_C_SECURE_UID: ${{ secrets.BTSCHOOL_X1_C_SECURE_UID }}
+        BTSCHOOL_X1_C_SECURE_PASS: ${{ secrets.BTSCHOOL_X1_C_SECURE_PASS }}
+        BTSCHOOL_X1_C_SECURE_SSL: ${{ secrets.BTSCHOOL_X1_C_SECURE_SSL }}
+        BTSCHOOL_X1_C_SECURE_TRACKER_SSL: ${{ secrets.BTSCHOOL_X1_C_SECURE_TRACKER_SSL }}
+        BTSCHOOL_X1_C_SECURE_LOGIN: ${{ secrets.BTSCHOOL_X1_C_SECURE_LOGIN }}
+        BTSCHOOL_X1_C_LANG_FOLDER: ${{ secrets.BTSCHOOL_X1_C_LANG_FOLDER }}
+        BTSCHOOL_X1_SL_SESSION: ${{ secrets.BTSCHOOL_X1_SL_SESSION }}
 
     steps:
       # 第一步：拉取当前仓库代码
