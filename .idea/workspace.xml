@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c13c9f-1235-44b6-8805-1511c671d9d2" name="Changes" comment="解决冲突">
+      <change afterPath="$PROJECT_DIR$/pttimeonly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/RunDaily.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/RunDaily.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Check_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/Check_in.py" afterDir="false" />
     </list>
