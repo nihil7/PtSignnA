@@ -3,7 +3,7 @@ name: Auto Check_in
 on:
   # 定时触发：每天 UTC 时间 22:00（即北京时间次日早上 6:00）
   schedule:
-    - cron: '36 22 * * *'
+    - cron: '56 22 * * *'
   # 支持手动触发工作流
   workflow_dispatch:
 
