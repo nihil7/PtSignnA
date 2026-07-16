@@ -6,7 +6,7 @@
 
 | 目录 | 来源 | 作用 |
 |------|------|------|
-| `checkin/` | PtSignnA | 每日自动签到脚本（PTTIME A/B、1PTBA、PTZONE、BTSCHOOL） |
+| `checkin/` | PtSignnA | 每日自动签到脚本（PTTIME A/B、PTZONE、BTSCHOOL） |
 | `getcookies/` | GetPtCookies | 用 Selenium / cloudscraper 抓取 PT 站 cookie，并上传到本仓库 Secrets |
 | `scheduler/` | Schedulerupdater | 【已退役】原用于每天改写 cron 给仓库"保活"，现由 RunDaily 工作流内置保活步骤取代 |
 

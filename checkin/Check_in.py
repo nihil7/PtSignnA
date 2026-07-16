@@ -10,28 +10,8 @@ if not os.getenv("GITHUB_ACTIONS", "").lower() == "true":
 
 # === 通用请求头 ===
 def build_headers(site):
-    if site == "PTBA":
-        return {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36 Edg/135.0.0.0",
-            "Referer": "https://1ptba.com/torrents.php",
-            "Accept": "*/*",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
-            "Sec-Ch-Ua": '"Microsoft Edge";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
-            "Sec-Ch-Ua-Mobile": "?1",
-            "Sec-Ch-Ua-Platform": '"Android"',
-            "Sec-Ch-Ua-Model": '"Nexus 5"',
-            "Sec-Ch-Ua-Platform-Version": '"6.0"',
-            "Sec-Ch-Ua-Full-Version": '"135.0.3179.98"',
-            "Sec-Ch-Ua-Full-Version-List": '"Microsoft Edge";v="135.0.3179.98", "Not-A.Brand";v="8.0.0.0", "Chromium";v="135.0.7049.115"',
-            "Sec-Fetch-Dest": "document",  # 注意此处为签到页，不是脚本，改为 document
-            "Sec-Fetch-Mode": "navigate",
-            "Sec-Fetch-Site": "same-origin",
-            "Upgrade-Insecure-Requests": "1"
-        }
-    else:
-        # 默认 header（可自行简化）
-        return {
+    # 默认 header（可自行简化）
+    return {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             "Referer": "https://www.example.com/",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -53,11 +33,6 @@ ACCOUNTS = [
         "site": "PTTIME",
         "account": "B",
         "url": "https://www.pttime.org/attendance.php?type=sign&uid=20801"
-    },
-    {
-        "site": "PTBA",
-        "account": "X1",
-        "url": "https://1ptba.com/attendance.php"
     },
     {
         "site": "PTZONE",

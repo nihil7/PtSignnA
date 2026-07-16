@@ -37,16 +37,6 @@ jobs:
         PTTIME_B_C_SECURE_LOGIN: ${{ secrets.PTTIME_B_C_SECURE_LOGIN }}
         PTTIME_B_C_LANG_FOLDER: ${{ secrets.PTTIME_B_C_LANG_FOLDER }}
 
-        # 1PTBA
-        PTBA_X1_LOGGED_IN: ${{ secrets.PTBA_X1_LOGGED_IN }}
-        PTBA_X1_CF_CLEARANCE: ${{ secrets.PTBA_X1_CF_CLEARANCE }}
-        PTBA_X1_C_SECURE_UID: ${{ secrets.PTBA_X1_C_SECURE_UID }}
-        PTBA_X1_C_SECURE_TRACKER_SSL: ${{ secrets.PTBA_X1_C_SECURE_TRACKER_SSL }}
-        PTBA_X1_C_SECURE_SSL: ${{ secrets.PTBA_X1_C_SECURE_SSL }}
-        PTBA_X1_C_SECURE_PASS: ${{ secrets.PTBA_X1_C_SECURE_PASS }}
-        PTBA_X1_C_SECURE_LOGIN: ${{ secrets.PTBA_X1_C_SECURE_LOGIN }}
-        PTBA_X1_C_LANG_FOLDER: ${{ secrets.PTBA_X1_C_LANG_FOLDER }}
-
         # PTTZONE
         PTZONE_X1_LOGGED_IN: ${{ secrets.PTZONE_X1_LOGGED_IN }}
         PTZONE_X1_CF_CLEARANCE: ${{ secrets.PTZONE_X1_CF_CLEARANCE }}
