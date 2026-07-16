@@ -1,0 +1,45 @@
+name: Get PT Cookies
+
+on:
+  # 仅手动触发（原 GetPtCookies 仓库的月度定时已停用；
+  # 注意：cf_clearance 与 IP/UA 绑定，在 Actions 上抓的值只对 Actions 出口 IP 段有效）
+  workflow_dispatch:
+
+jobs:
+  run-main:
+    runs-on: ubuntu-latest
+
+    env:
+      TOKEN: ${{ secrets.TOKEN }}
+
+      COOKIE_1_c_secure_ssl: ${{ secrets.COOKIE_1_C_SECURE_SSL }}
+      COOKIE_1_c_secure_pass: ${{ secrets.COOKIE_1_C_SECURE_PASS }}
+      COOKIE_1_logged_in: ${{ secrets.COOKIE_1_LOGGED_IN }}
+      COOKIE_1_c_secure_uid: ${{ secrets.COOKIE_1_C_SECURE_UID }}
+      COOKIE_1_c_secure_login: ${{ secrets.COOKIE_1_C_SECURE_LOGIN }}
+      COOKIE_1_c_secure_tracker_ssl: ${{ secrets.COOKIE_1_C_SECURE_TRACKER_SSL }}
+      COOKIE_1_cf_clearance: ${{ secrets.COOKIE_1_CF_CLEARANCE }}
+      COOKIE_1_c_lang_folder: ${{ secrets.COOKIE_1_C_LANG_FOLDER }}
+
+    steps:
+      - name: 📥 检出代码
+        uses: actions/checkout@v4
+
+      - name: 🐍 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 📦 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-dotenv selenium PyGithub webdriver-manager cloudscraper
+
+      - name: 🧑‍💻 安装 Google Chrome
+        run: |
+          sudo apt update
+          sudo apt install -y google-chrome-stable
+
+      - name: ▶️ 运行主程序 main.py
+        working-directory: getcookies
+        run: python main.py

@@ -87,7 +87,7 @@ jobs:
 
       # 第四步：运行签到脚本
       - name: 执行签到脚本
-        run: python Check_in.py
+        run: python checkin/Check_in.py
 
       # 第五步：保活。仓库超过 25 天无提交时自动做一次空提交，
       # 防止 GitHub 因 60 天无活动禁用定时任务（disabled_inactivity）

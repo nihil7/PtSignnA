@@ -3,10 +3,9 @@ import time
 import random
 import cloudscraper
 from datetime import datetime
-# from dotenv import load_dotenv
-
 # === 加载本地 .env（GitHub Actions 中跳过）===
 if not os.getenv("GITHUB_ACTIONS", "").lower() == "true":
+    from dotenv import load_dotenv
     load_dotenv()
 
 # === 通用请求头 ===
